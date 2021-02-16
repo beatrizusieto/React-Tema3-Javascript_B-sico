@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+    <script>
+
+    /* Bucle que se repite infinitamente hasta que no se cierra la página */
+    while(true)
+    {
+        var nota = prompt('Introduce la nota:');
+
+        var nota_examen = parseInt(nota);
+        
+        if( nota_examen >=0 && nota_examen< 5)
+        {
+            alert("Ohhh has suspendido con un " + nota );
+        }
+        else if( nota_examen >=5 && nota_examen <= 10 )
+        {
+            alert("Ohhh has aprovado con un " + nota );
+        }
+        else
+        {
+            alert("Nota no válida. Tiene que estar entre 0 y 10"); 
+        }
+    }    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
