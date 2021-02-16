@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici6</title>
+    <script>
+
+
+        var frase = "Tinc un cotxe de color blau";
+        var arrayEntrada1 = frase.split(" ");
+        var arraySortida1 = frase.split(" ");
+
+        for (var i=0; i < arrayEntrada1.length; i++) {
+           
+            if(arrayEntrada1[i]=="blau")
+            {
+                arraySortida1[i] = "verd";
+            }
+            else
+            {
+                arraySortida1[i] = arrayEntrada1[i];
+            }
+        }
+
+        console.log(arraySortida1.join(" "));
+
+        var arrayEntrada2 = frase.split("");
+        var arraySortida2 = frase.split("");
+        
+        for (var i=0; i < arrayEntrada2.length; i++) {
+           
+           if(arrayEntrada2[i]=="o")
+           {
+               arraySortida2[i] = "u";
+           }
+           else
+           {
+               arraySortida2[i] = arrayEntrada2[i];
+           }
+       }
+
+       console.log(arraySortida2.join(""));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
