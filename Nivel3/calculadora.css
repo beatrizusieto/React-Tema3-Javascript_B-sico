@@ -1,0 +1,21 @@
+*{
+    padding: 10px;
+    border: 10px;
+}
+
+/*calculadora*/ 
+.calculadora { 
+    border: 3px black ridge; 
+    width: 250px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    background-color: rgb(58, 54, 54) 
+}
+
+/*botones*/ 
+.calculadora [type=button] { 
+    width: 50px; 
+    padding: 10; 
+    background-color: orange; 
+    color: white;
+}

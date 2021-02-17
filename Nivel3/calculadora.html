@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel3</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css" />
+    <script type="text/javascript" src="calculadora.js"></script> 
+</head>
+<body>
+<div class="calculadora">
+    <form name="calcul">
+        <input type="text" name="pantalla" value="">
+        <br>
+        <br>
+        <input type="button" value="1" onClick="document.calcul.pantalla.value+='1'">
+        <input type="button" value="2" onClick="document.calcul.pantalla.value+='2'">
+        <input type="button" value="3" onClick="document.calcul.pantalla.value+='3'">
+        <input type="button" value="+" onClick="document.calcul.pantalla.value+='+'">
+        <br>
+        <br>
+        <input type="button" value="4" onClick="document.calcul.pantalla.value+='4'">
+        <input type="button" value="5" onClick="document.calcul.pantalla.value+='5'">
+        <input type="button" value="6" onClick="document.calcul.pantalla.value+='6'">
+        <input type="button" value="-" onClick="document.calcul.pantalla.value+='-'">
+        <br>
+        <br>
+        <input type="button" value="7" onClick="document.calcul.pantalla.value+='7'">
+        <input type="button" value="8" onClick="document.calcul.pantalla.value+='8'">
+        <input type="button" value="9" onClick="document.calcul.pantalla.value+='9'">
+        <input type="button" value="*" onClick="document.calcul.pantalla.value+='*'">
+        <br>
+        <br>
+        <input type="button" value="0" onClick="document.calcul.pantalla.value+='0'">
+        <input type="reset"  value="c">
+        <input type="button" value="/" onClick="document.calcul.pantalla.value+='/'">
+        <input type="button" value="=" onClick="document.calcul.pantalla.value=calculadora(document.calcul.pantalla.value)">
+        </form>
+</div>
+</body>
+</html> 
+   
