@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+    <script>
+
+    function calculadora( oper, val1, val2)
+	{
+			   if( oper == "suma")
+               {
+                   resul = val1 + val2;
+               }
+               else if( oper == "resta")
+               {
+                   resul = val1 - val2;
+               }
+               else if( oper == "multiplicacio")
+               {
+                   resul = val1 * val2;
+               }
+               else
+               {
+                alert("La operació suministrada no és correcta"); 
+                resul=null;
+               }
+
+               return resul;
+
+	}
+
+    while(true)
+    {
+        var validOper = false;
+        var valid1 = false;
+        var valid2 = false;
+
+        while (!validOper)
+        {
+          var operador = prompt('Introduix la operació a realitzar(suma,resta o multiplicacio):');
+          if(operador == "suma" || operador == "resta" || operador == "multiplicacio")
+          {
+              validOper = true;
+          }
+        }
+        
+        while(!valid1)
+        {
+            valor1 = prompt('Introduix el primer número:');
+          
+            try{
+              if( numero1 = parseFloat(valor1)) valid1 = true;
+            } catch(error) 
+            {
+              valid1 = false;
+              alert("El número suministrat no és valid. Introdueix un altre");
+            }
+            
+        }  
+
+        while(!valid2)
+        {
+
+          var valor2 = prompt('Introduix el segon número:');
+
+          try{
+            if( numero2 = parseFloat(valor2)) valid2 = true;
+            } catch(error) 
+            {
+              valid2 = false;
+              alert("El número suministrat no és valid. Introdueix un altre");
+            }
+        }    
+          	
+	    var resultat = calculadora(operador, numero1, numero2);
+		
+        if(resultat)
+        {
+          alert("El resultat és: " + resultat.toString());
+        }  
+       
+    }    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
